@@ -4,11 +4,11 @@ namespace Dotlib.Hash
 {
     public abstract class BaseHash
     {
-        public static string Calculate(string value)
+        public static bool Validate(string plainText, string hashText) => plainText.Equals(hashText);
+
+        public static string Generate(string value)
         {
             throw new System.NotImplementedException();
         }
-
-        public static bool Validate(string plainText, string hashText) => plainText.Equals(hashText);
     }
 }
