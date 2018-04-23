@@ -8,7 +8,7 @@ namespace Dotlib.Hash
         /// <summary>Calcula o MD5 de uma string</summary>
         ///
         /// <param name="input">String a ser calculada</param>
-        new public static string Calculate(string input)
+        new public static string Generate(string input)
         {
             MD5 md5Hash = MD5.Create();
 
